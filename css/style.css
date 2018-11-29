@@ -1,3 +1,6 @@
+* {
+   box-sizing: border-box;
+}
 body {
     background: #ff9966;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
@@ -51,5 +54,26 @@ nav.sencillo ul li {
    }
    nav.sencillo ul li {
       margin-bottom: 0;
+   }
+}
+
+/* Menú con Iconos */
+nav.iconos .text-item span {
+   display: block;
+   font-size: .8rem;
+   margin-top: .5rem;
+}
+@media screen and ( min-width: 480px ) {
+   nav.iconos ul {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   nav.iconos ul li {
+      flex: 0 1 50%;
+   }
+}
+@media screen and ( min-width: 768px ) {
+   nav.iconos ul li {
+      flex: 1;
    }
 }
