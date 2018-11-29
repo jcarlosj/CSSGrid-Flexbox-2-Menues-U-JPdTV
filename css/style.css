@@ -58,6 +58,13 @@ nav.sencillo ul li {
 }
 
 /* Menú con Iconos */
+nav.iconos ul li a {
+   display: flex;
+}
+nav.iconos .icon-item {
+   flex: 0 1 2.6rem;
+   justify-content: flex-start;
+}
 nav.iconos .text-item span {
    display: block;
    font-size: .8rem;
