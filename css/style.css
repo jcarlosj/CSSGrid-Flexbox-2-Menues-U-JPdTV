@@ -107,5 +107,9 @@ nav.dropdown ul li {
       background-color: orange;
       position: absolute;
       top: 100%;
+      display: none;
+   }
+   nav.dropdown ul li:hover ul {
+      display: flex;
    }
 }
