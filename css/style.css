@@ -156,3 +156,22 @@ nav#social ul li a[href*='instagram.com']::before {
 nav#social ul li a[href*='pinterest.com']::before {
    content: '\f0d2';
 }
+
+/* Menu: Dropdown y Redes Sociales */
+.nav-dropdown-social {
+   display: flex;
+   flex-direction: column;
+   background-color: #3F51B5;
+}
+.nav-dropdown-social nav#social {
+   order: -1;
+}
+@media screen and ( min-width: 768px ) {
+   .nav-dropdown-social {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .nav-dropdown-social nav#social {
+      order: unset;
+   }
+}
