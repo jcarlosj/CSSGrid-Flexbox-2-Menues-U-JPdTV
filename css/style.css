@@ -45,8 +45,8 @@ nav.sencillo ul {
    justify-content: space-between;
 }
 nav.sencillo ul li {
-   text-align: center;
    margin-bottom: .5rem;
+   text-align: center;
 }
 @media screen and ( min-width: 768px ) {
    nav.sencillo ul {
@@ -82,5 +82,25 @@ nav.iconos .text-item span {
 @media screen and ( min-width: 768px ) {
    nav.iconos ul li {
       flex: 1;
+   }
+}
+
+/* Menú Dropdown */
+nav.dropdown ul {
+   display: flex;
+   flex-direction: column;
+}
+nav.dropdown ul li {
+   display: flex;
+   flex-direction: column;
+}
+@media screen and ( min-width: 768px ) {
+   nav.dropdown ul {
+      flex-direction: row;
+   }
+   nav.dropdown ul li {
+      display: flex;
+      flex: 1 1 100%;
+      position: relative;
    }
 }
