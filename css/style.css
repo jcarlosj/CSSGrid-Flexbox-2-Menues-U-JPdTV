@@ -105,11 +105,14 @@ nav.dropdown ul li {
    }
    nav.dropdown ul li ul {
       background-color: orange;
+      display: none;
+      left: 0;
       position: absolute;
       top: 100%;
-      display: none;
    }
    nav.dropdown ul li:hover ul {
       display: flex;
+      flex-direction: column;
+      width: 100%;
    }
 }
